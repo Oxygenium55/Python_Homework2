@@ -3,6 +3,13 @@
 # 6782 -> 23
 # 0,56 -> 11
 
+number = input('Введите число: ')
+summ = 0
 
+for i in number:
+    if i != '.':
+        summ += int(i)
+
+print(f'Сумма цифр в числе {number} равна {summ}.')
 
 
