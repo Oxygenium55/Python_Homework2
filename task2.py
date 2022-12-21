@@ -4,7 +4,12 @@
 # Для n=4 -> [2, 2.25, 2.37, 2.44]
 # Сумма 9.06
 
-
+n = int(input('Введите число: '))
+my_list = []
+for i in range(1, n + 1):
+    item = round((1 + 1 / i )** i, 2)
+    my_list.append(item)
+print(f'{my_list}\nСумма чисел в последовательности: {round(sum(my_list), 3)}')
 
 
 
